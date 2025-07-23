@@ -1,0 +1,120 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--text);
+  --color-muted-foreground: var(--text-secondary);
+  --color-card: var(--surface-card);
+  --color-surface-hover: var(--surface-hover);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-accent-dark: var(--accent-dark);
+  --color-success: var(--success);
+  --color-bitcoin: var(--bitcoin-mainnet);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  
+}
+
+:root {
+  --text: #022229;
+  --text-secondary: #547c85;
+  --surface-card: #ffffff;
+  --surface-ground: #f8fafa;
+  --surface-hover: #eef4f5;
+  --border: #cbdde1;
+  --header-bg: #ffffff;
+  --header-text: #022229;
+  --background: var(--surface-ground);
+  --accent: #086c81;
+  --accent-light: #0ab6d9;
+  --accent-dark: #022229;
+  --bitcoin-mainnet: #f7931a;
+  --bitcoin-testnet: #28c025;
+  --warning: #f20000;
+  --success: #0f9d58;
+}
+
+.dark {
+  --text: #cbdde1;
+  --text-secondary: #a8b8bc;
+  --surface-card: #043a4a;
+  --surface-ground: #022229;
+  --surface-hover: #065366;
+  --border: #2a5f6a;
+  --header-bg: #086c81;
+  --header-text: #cbdde1;
+  --background: var(--surface-ground);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .bg-background {
+    background-color: var(--background) !important;
+  }
+
+  .bg-card {
+    background-color: var(--surface-card) !important;
+  }
+
+  .bg-surface-hover {
+    background-color: var(--surface-hover) !important;
+  }
+
+  .text-foreground {
+    color: var(--text) !important;
+  }
+
+  .text-muted-foreground {
+    color: var(--text-secondary) !important;
+  }
+
+  .border-custom {
+    border-color: var(--border);
+  }
+
+  .bg-accent {
+    background-color: var(--accent) !important;
+  }
+
+  .bg-accent-light {
+    background-color: var(--accent-light) !important;
+  }
+
+  .text-accent {
+    color: var(--accent) !important;
+  }
+
+  .text-accent-light {
+    color: var(--accent-light) !important;
+  }
+
+  .bg-success {
+    background-color: var(--success) !important;
+  }
+
+  .text-success {
+    color: var(--success) !important;
+  }
+
+  .bg-bitcoin {
+    background-color: var(--bitcoin-mainnet) !important;
+  }
+
+  .text-bitcoin {
+    color: var(--bitcoin-mainnet) !important;
+  }
+}
