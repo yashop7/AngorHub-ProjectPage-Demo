@@ -24,7 +24,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { TooltipProvider, Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip"
+import { TooltipProvider, Tooltip, TooltipTrigger } from "@/components/ui/tooltip"
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Badge } from "@/components/ui/badge"
@@ -925,8 +925,8 @@ function AboutthisProject() {
           Why Now?
         </h3>
         <p className="text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-          We're living through economic uncertainty, political instability, and a rising distrust in
-          institutions. While many feel powerless, "Network Effect" offers stories of resilience and hope,
+          We&apos;re living through economic uncertainty, political instability, and a rising distrust in
+          institutions. While many feel powerless, &quot;Network Effect&quot; offers stories of resilience and hope,
           by showing how a growing number of overlooked communities are quietly opting out—using tools like
           Bitcoin to take back control of their lives.
         </p>
@@ -945,7 +945,7 @@ function AboutthisProject() {
             rarely at the centre of mainstream narratives about bitcoin.
           </p>
           <p className="text-base leading-relaxed" style={{ color: "var(--text)" }}>
-            <strong style={{ color: "var(--text)" }}>We're here to fix that.</strong>
+            <strong style={{ color: "var(--text)" }}>Were here to fix that.</strong>
           </p>
           <p className="text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
             Each episode is rooted in real lives and real impact. The films will be told by the people
@@ -959,7 +959,7 @@ function AboutthisProject() {
           Why We Need You
         </h3>
         <p className="text-base leading-relaxed mb-4" style={{ color: "var(--text-secondary)" }}>
-          We're independently producing this series, and we need your support to:
+          We&apos;re independently producing this series, and we need your support to:
         </p>
         <ul className="space-y-2 text-base leading-relaxed mb-4" style={{ color: "var(--text-secondary)" }}>
           <li>
