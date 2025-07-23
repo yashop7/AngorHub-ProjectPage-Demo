@@ -519,7 +519,7 @@ export default function ProjectView() {
                       <div
                         key={index}
                         className="flex items-center border gap-3 p-3 rounded-xl border-custom hover:bg-surface-hover transition-all duration-300">
-                        <Avatar className="h-12 w-12 ring-2" style={{ ringColor: "var(--accent)" }}>
+                        <Avatar className="h-12 w-12 ring-2 ring-accent">
                           <AvatarImage src={member.avatar || "/placeholder.svg"} alt={member.name} />
                           <AvatarFallback className="font-medium"> J </AvatarFallback>
                         </Avatar>
